@@ -34,6 +34,19 @@
         background-color: $background-button;
     }
     &__animate {
-        width: 100%;
+        width: 20rem;
+        z-index: -1;
+        @media screen and (min-width: 470px) {
+            position: relative;
+            bottom: 15vh;
+            width: 30rem;
+        }
+        @media screen and (min-width: 570px) {
+            position: relative;
+            bottom: 20vh;
+        }
+        @media screen and (min-width: 700px) {
+           width: 40rem; 
+        }
     }
 }

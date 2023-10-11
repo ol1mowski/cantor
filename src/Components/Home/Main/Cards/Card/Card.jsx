@@ -5,7 +5,7 @@ const Card = props => {
         <>
             <div className={style.cardWrapper}>
                 <div className={style.cardWrapper__card}>
-                   {props.value} <span className={style.cardWrapper__dot}>.</span>
+                   {props.value} 
                 </div>
             </div>
         </>

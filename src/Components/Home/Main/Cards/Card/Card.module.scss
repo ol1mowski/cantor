@@ -1,6 +1,7 @@
 @import '../../../../../sass/setting.sass';
 
 .cardWrapper {
+    position: relative;
     width: 45%;
     height: 25%;
     border-radius: .7rem;
@@ -13,9 +14,14 @@
     box-shadow: -2px 2px 10px #A5A7AC;
     /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#A5A7AC);
+    @media screen and (min-width: 470px) {
+        bottom: 10vh;
+    }
 
     /*IE 5.5-7*/
     &__card {
+        z-index: 1;
+        position: absolute;
         width: 100%;
         padding: 2rem 1rem 1rem 1rem;
         position: relative;
@@ -28,9 +34,9 @@
         font-size: .9rem;
     }
 
-    &__dot::after {
+    &__dot {
         color: #6432ff;
-        font-size: 7rem;
+        font-size: 2rem;
         position: relative;
         top: .5vh;
     }
