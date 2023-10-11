@@ -1,13 +1,9 @@
-@import '../../../../sass/setting.sass';
+@import '../../../../../sass/setting.sass';
 
-.cardContainer {
-    width: 100vw;
-    height: 60vh;
-    padding: 0 1rem;
-    padding-top: 3rem;
-}
 .cardWrapper {
-    width: 50%;
+    width: 45%;
+    height: 25%;
+    border-radius: .7rem;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=45, Color=#A5A7AC)";
     /*IE 8*/
     -moz-box-shadow: -2px 2px 10px #A5A7AC;
@@ -22,7 +18,6 @@
     &__card {
         width: 100%;
         padding: 2rem 1rem 1rem 1rem;
-        border-radius: .7rem;
         position: relative;
         display: flex;
         justify-content: center;
@@ -33,11 +28,10 @@
         font-size: .9rem;
     }
 
-    &__dot {
+    &__dot::after {
         color: #6432ff;
-        font-size: 2rem;
+        font-size: 7rem;
         position: relative;
-        right: 1vw;
         top: .5vh;
     }
 }

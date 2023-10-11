@@ -1,0 +1,11 @@
+@import '../../../../sass/setting.sass';
+
+.cardContainer {
+    width: 100%;
+    height: 60vh;
+    padding: 0 1rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
