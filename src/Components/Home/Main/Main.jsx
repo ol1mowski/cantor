@@ -1,5 +1,6 @@
 import style from './Main.module.scss';
 import animate from '../../../assets/animation.svg';
+import Card from './Card/Card';
 
 const Main = () => {
     return (
@@ -16,6 +17,7 @@ const Main = () => {
                 </button>
                 <img className={style.mainContainer__animate} src={animate} alt='animation' />
             </main>
+            <Card />
         </>
     );
 };

@@ -1,1 +1,43 @@
 @import '../../../../sass/setting.sass';
+
+.cardContainer {
+    width: 100vw;
+    height: 60vh;
+    padding: 0 1rem;
+    padding-top: 3rem;
+}
+.cardWrapper {
+    width: 50%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=45, Color=#A5A7AC)";
+    /*IE 8*/
+    -moz-box-shadow: -2px 2px 10px #A5A7AC;
+    /*FF 3.5+*/
+    -webkit-box-shadow: -2px 2px 10px #A5A7AC;
+    /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: -2px 2px 10px #A5A7AC;
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#A5A7AC);
+
+    /*IE 5.5-7*/
+    &__card {
+        width: 100%;
+        padding: 2rem 1rem 1rem 1rem;
+        border-radius: .7rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: $font-color-light;
+        font-weight: 600;
+        font-size: .9rem;
+    }
+
+    &__dot {
+        color: #6432ff;
+        font-size: 2rem;
+        position: relative;
+        right: 1vw;
+        top: .5vh;
+    }
+}
