@@ -1,0 +1,39 @@
+@import '../../../sass/setting.sass';
+
+.mainContainer {
+    gap: 10%;
+    padding: 0 1rem;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__h1 {
+        color: $font-color-light;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        font-family: $font-family-headers;
+    }
+    &__p {
+        color: $font-color-lithless;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        text-align: center;
+        font-weight: 400;
+    }
+    &__button {
+        cursor: pointer;
+        border: none;
+        border-radius: .7rem;
+        font-size: .9rem;
+        font-weight: 400;
+        color: #fff;
+        padding: 1rem;
+        background-color: $background-button;
+    }
+    &__animate {
+        width: 100%;
+    }
+}

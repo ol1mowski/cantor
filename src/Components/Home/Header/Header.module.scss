@@ -1,0 +1,42 @@
+@import '../../../sass/setting.sass';
+
+.headerContainer {
+    width: 100vw;
+    height: 35vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40%;
+
+    &__img {
+        width: 20%;
+    }
+
+    &__login {
+        &__a {
+            font-weight: 100;
+            font-size: 1rem;
+            text-decoration: none;
+            color: $font-color-link;
+        }
+    }
+    &__menu {
+        cursor: pointer;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        padding: .7rem;
+        border-radius: .7rem;
+    }
+    &__right {
+        width: 80%;
+        margin-left: 10%;
+        gap: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
