@@ -15,13 +15,19 @@
     }
 
     &__img {
+        background-image: url('../../../assets/logo.svg');
         margin-left: 1rem;
-        width: 4rem;
-        @media screen and (min-width: 500px){
-            margin-left: 3rem;
+        width: 7rem;
+        height: 4rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media screen and (min-width: 550px){
+            width: 9rem;
         }
-        @media screen and (min-width: 700px){
-            margin-left: 7rem;
+        @media screen and (min-width: 780px){
+            background-image: url('../../../assets/companie\'s_logo.svg');
+            width: 40rem;
         }
     }
 
@@ -46,11 +52,19 @@
     }
 
     &__right {
+        position: sticky;
+        left: 15rem;
         width: 80%;
-        margin-left: 10%;
+        margin-left: 3rem;
         gap: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (min-width: 550px) {
+            margin-left: 15rem;
+        }
+        @media screen and (min-width: 850px) {
+            margin-left: 25rem;
+        }
     }
 }

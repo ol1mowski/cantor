@@ -4,6 +4,7 @@
     position: relative;
     width: 45%;
     height: 25%;
+    margin: 0 auto;
     border-radius: .7rem;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=45, Color=#A5A7AC)";
     /*IE 8*/
@@ -17,6 +18,22 @@
     @media screen and (min-width: 470px) {
         bottom: 10vh;
     }
+    @media screen and (min-width: 450px) {
+        width: 35%;
+    }
+    @media screen and (min-width: 750px) {
+        width: 30%;
+        margin: 0 10%;
+    } 
+    @media screen and (min-width: 900px) {
+        width: 25%;
+        margin: 0 10%;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 30%;
+        margin: 0 1%;
+    }
+
 
     /*IE 5.5-7*/
     &__card {
@@ -32,6 +49,9 @@
         color: $font-color-light;
         font-weight: 600;
         font-size: .9rem;
+        @media screen and (min-width: 600px) {
+            font-size: 1.3rem;
+        }
     }
 
     &__dot {
