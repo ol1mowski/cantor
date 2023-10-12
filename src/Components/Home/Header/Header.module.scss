@@ -29,14 +29,24 @@
             background-image: url('../../../assets/companie\'s_logo.svg');
             width: 40rem;
         }
+        @media screen and (min-width: 1024px) {
+            width: 10rem;
+        }
     }
 
     &__login {
+        @media screen and (min-width: 1024px) {
+            width: 9rem;
+            text-align: right;
+        }
         &__a {
             font-weight: 100;
             font-size: 1rem;
             text-decoration: none;
             color: $font-color-link;
+            @media screen and (min-width: 1024px) {
+                color: $font-color-lithless;
+            }
         }
     }
 
@@ -49,6 +59,47 @@
         border: 1px solid #000;
         padding: .7rem;
         border-radius: .7rem;
+        @media screen and (min-width: 1024px) {
+            display: none;
+        }
+    }
+    &__menuBar {
+        display: none;
+        width: 70%;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+    }
+    &__loginSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+
+    &__register {
+        display: none;
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+        &__btn {
+            display: none;
+            @media screen and (min-width: 1024px) {
+                @include button;
+                padding: .9rem .3rem;
+                display: block;
+                width: 11rem;
+                margin-right: 2rem;
+            }
+        }
     }
 
     &__right {
@@ -66,5 +117,10 @@
         @media screen and (min-width: 850px) {
             margin-left: 25rem;
         }
+        @media screen and (min-width: 1024px) {
+            margin-left: 1rem;
+            justify-content: start;
+        }
     }
+
 }

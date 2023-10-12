@@ -24,14 +24,7 @@
         font-weight: 400;
     }
     &__button {
-        cursor: pointer;
-        border: none;
-        border-radius: .7rem;
-        font-size: .9rem;
-        font-weight: 400;
-        color: #fff;
-        padding: 1rem;
-        background-color: $background-button;
+        @include button;
     }
     &__animate {
         width: 20rem;
