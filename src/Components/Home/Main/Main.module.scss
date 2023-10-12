@@ -9,12 +9,36 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
+
+    &__contentContainer {
+        display: none;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            position: relative;
+            bottom: 17rem;
+            left: 5rem;
+            gap: 2rem;
+        }
+    }
+        
+    
     &__h1 {
         color: $font-color-light;
         font-size: 1.6rem;
         font-weight: bold;
         text-align: center;
         font-family: $font-family-headers;
+        @media screen and (min-width: 1024px) {
+            font-size: 3rem;
+            width: 120%;
+            text-align: left;
+        }
     }
     &__p {
         color: $font-color-lithless;
@@ -22,6 +46,9 @@
         line-height: 1.6rem;
         text-align: center;
         font-weight: 400;
+        @media screen and (min-width: 1024px) {
+            text-align-last: left;
+        }
     }
     &__button {
         @include button;
@@ -40,6 +67,10 @@
         }
         @media screen and (min-width: 700px) {
            width: 40rem; 
+        }
+        @media screen and (min-width: 1024px) {
+            bottom: 35vh;
+            left: 5rem;
         }
     }
 }
