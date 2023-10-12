@@ -26,7 +26,7 @@ const Cards = () => {
         },
         {
             id: 6,
-            content: 'Porzyczki wielowalutowe'
+            content: 'Pożyczki wielowalutowe'
         },
     ]
 
