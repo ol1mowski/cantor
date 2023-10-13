@@ -1,9 +1,36 @@
+import { useEffect, useRef } from 'react';
 import style from './Header.module.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { setShow } from '../../../store';
 
 const Header = () => {
+
+    const menu = useRef(null);
+    const click = useSelector((state) => state.showMenu.click);
+    const dispatch = useDispatch();
+    const header = useRef(null);
+    
+    useEffect(() => {
+    
+        const showMenuHandler = () => {
+            dispatch(setShow());
+            console.log(click);
+        }
+
+        header.current.style.display = click ? 'none' : 'flex';
+    
+        menu.current.addEventListener('click', showMenuHandler);
+    
+        return(() => {
+            menu.current.removeEventListener('click', showMenuHandler);
+        })
+    
+    }, [menu, click]);
+    
+
     return (
         <>
-            <header className={style.headerContainer}>
+            <header ref={header} className={style.headerContainer}>
                 <div className={style.headerContainer__img} ></div>
                 <div className={style.headerContainer__right}>
                     <section className={style.headerContainer__menuBar}>
@@ -30,7 +57,7 @@ const Header = () => {
                             </a>
                         </div>
                     </section>
-                    <nav className={style.headerContainer__menu}>
+                    <nav ref={menu} className={style.headerContainer__menu}>
                         Menu
                     </nav>
                 </div>

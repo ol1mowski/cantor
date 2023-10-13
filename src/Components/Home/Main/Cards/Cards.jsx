@@ -1,5 +1,7 @@
+import { useEffect, useRef } from "react";
 import Card from "./Card/Card";
 import style from "./Cards.module.scss";
+import { useSelector } from "react-redux";
 
 const Cards = () => {
   const CARDS_VALUES = [
@@ -29,11 +31,21 @@ const Cards = () => {
     },
   ];
 
+
+  const cards = useRef(null);
+  const click = useSelector((state) => state.showMenu.click); 
+
+  useEffect(() => {
+
+    cards.current.style.display = click ? 'none' : 'flex';
+
+  }, [click, cards]);
+
   return (
     <>
-      <div id={style.cardsWrapper} className="container text-center">
+      <div ref={cards} id={style.cardsWrapper} className="container text-center">
         <div id={style.gap} className="row row-cols-2">
-          {CARDS_VALUES.map(item => <Card value={item.content} key={item.id}/>)}
+          {CARDS_VALUES.map(item => <Card value={item.content} key={item.id} />)}
         </div>
       </div>
     </>
