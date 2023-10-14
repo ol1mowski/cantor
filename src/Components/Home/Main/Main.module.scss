@@ -12,6 +12,10 @@
     @media screen and (min-width: 1024px) {
         flex-direction: row;
     }
+    @media (orientation: landscape) and (min-width: 320px) and (max-width: 950px)  {
+        margin-top: 3rem;
+        gap: 20%;
+    }
 
     &__contentContainer {
         display: flex;
@@ -53,6 +57,11 @@
         @media screen and (min-width: 1200px) {
             width: 60%;
         }
+        @media (orientation: landscape) and (min-width: 320px) and (max-width: 950px)  {
+            width: 150%;
+            padding: 0;
+            margin-bottom: 10vh;
+        }
     }
     &__p {
         color: $font-color-lithless;
@@ -62,6 +71,9 @@
         font-weight: 400;
         @media screen and (min-width: 1024px) {
             text-align-last: left;
+        }
+        @media (orientation: landscape) and (min-width: 320px) and (max-width: 950px)  {
+            width: 150%;
         }
     }
     &__button {
@@ -91,6 +103,9 @@
         }
         @media screen and (min-width: 1600px) {
             left: 5rem;
+        }
+        @media (orientation: landscape) and (min-width: 320px) and (max-width: 950px)  {
+            bottom: 40vh;
         }
     }
 }

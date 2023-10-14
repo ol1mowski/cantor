@@ -52,6 +52,9 @@
   @media screen and (min-width: 1600px)  {
     bottom: 20rem;
   }
+  @media (orientation: landscape) and (min-width: 320px) and (max-width: 950px)  {
+    bottom: -5rem;
+}
 }
 
 // .cardWrapper {
