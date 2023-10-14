@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cantor/static/css/main.e0b4bcc2.css",
+    "main.js": "/cantor/static/js/main.002af2ea.js",
+    "static/js/787.da6ee859.chunk.js": "/cantor/static/js/787.da6ee859.chunk.js",
+    "static/media/animation.svg": "/cantor/static/media/animation.b66de4d2929c3a3970434226ee4a4f31.svg",
+    "static/media/companie's_logo.svg": "/cantor/static/media/companie's_logo.ce776553beac4c75d955.svg",
+    "static/media/logo.svg": "/cantor/static/media/logo.08cb51ccb3cfcab2036d.svg",
+    "index.html": "/cantor/index.html",
+    "static/media/caret-right.svg": "/cantor/static/media/caret-right.749907dd43ccad5530eb6bcaaecaa301.svg",
+    "static/media/x.svg": "/cantor/static/media/x.ce71f278bdc5e2e5c11295fba6772c1e.svg",
+    "main.e0b4bcc2.css.map": "/cantor/static/css/main.e0b4bcc2.css.map",
+    "main.002af2ea.js.map": "/cantor/static/js/main.002af2ea.js.map",
+    "787.da6ee859.chunk.js.map": "/cantor/static/js/787.da6ee859.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0b4bcc2.css",
+    "static/js/main.002af2ea.js"
+  ]
+}
