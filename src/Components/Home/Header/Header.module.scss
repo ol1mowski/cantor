@@ -8,12 +8,15 @@
     padding-bottom: 15rem;
     cursor: pointer;
     padding-top: 10%;
+
     @media screen and (min-width: 470px) {
         padding-bottom: 20rem;
     }
+
     @media screen and (min-width: 700px) {
         padding-bottom: 25rem;
     }
+
     @media screen and (min-width: 1100px) {
         padding-top: 5%;
     }
@@ -26,19 +29,24 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        @media screen and (min-width: 550px){
+
+        @media screen and (min-width: 550px) {
             width: 9rem;
         }
-        @media screen and (min-width: 780px){
+
+        @media screen and (min-width: 780px) {
             background-image: url('../../../assets/companie\'s_logo.svg');
             width: 40rem;
         }
+
         @media screen and (min-width: 1024px) {
             width: 10rem;
         }
+
         @media screen and (min-width: 1200px) {
             margin-left: 5rem;
         }
+
         @media screen and (min-width: 1400px) {
             margin-left: 7rem;
             width: 15rem;
@@ -50,11 +58,13 @@
             width: 9rem;
             text-align: right;
         }
+
         &__a {
             font-weight: 100;
             font-size: 1rem;
             text-decoration: none;
             color: $font-color-link;
+
             @media screen and (min-width: 1024px) {
                 color: $font-color-lithless;
             }
@@ -70,25 +80,54 @@
         border: 1px solid #000;
         padding: .7rem;
         border-radius: .7rem;
+
         @media screen and (min-width: 1024px) {
             display: none;
         }
     }
+
     &__menuBar {
         display: none;
         width: 70%;
+
         @media screen and (min-width: 1024px) {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         &__wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 3rem;
+
+            &__items {
+                position: relative;
+                overflow: hidden;
+                cursor: pointer; // Dodajemy kursor wskazujący na elementy interaktywne
+                transition: all 0.3s;
+            }
+
+            &__items::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: .1rem;
+                background-color: #000;
+                transition: all 0.3s;
+            }
+
+            &__items:hover::after {
+                width: 100%;
+                left: 0;
+            }
+
         }
     }
+
     &__loginSection {
         display: flex;
         justify-content: center;
@@ -98,11 +137,14 @@
 
     &__register {
         display: none;
+
         @media screen and (min-width: 1024px) {
             display: block;
         }
+
         &__btn {
             display: none;
+
             @media screen and (min-width: 1024px) {
                 @include button;
                 padding: .9rem .3rem;
@@ -122,16 +164,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         @media screen and (min-width: 550px) {
             margin-left: 15rem;
         }
+
         @media screen and (min-width: 850px) {
             margin-left: 25rem;
         }
+
         @media screen and (min-width: 1024px) {
             margin-left: 1rem;
             justify-content: start;
         }
+
         @media screen and (min-width: 1400px) {
             margin: 0;
             text-align: left;

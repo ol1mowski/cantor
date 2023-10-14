@@ -9,24 +9,24 @@ const Header = () => {
     const click = useSelector((state) => state.showMenu.click);
     const dispatch = useDispatch();
     const header = useRef(null);
-    
+
     useEffect(() => {
-    
+
         const showMenuHandler = () => {
             dispatch(setShow());
             console.log(click);
         }
 
         header.current.style.display = click ? 'none' : 'flex';
-    
+
         menu.current.addEventListener('click', showMenuHandler);
-    
-        return(() => {
+
+        return (() => {
             menu.current.removeEventListener('click', showMenuHandler);
         })
-    
+
     }, [menu, click]);
-    
+
 
     return (
         <>
@@ -36,12 +36,13 @@ const Header = () => {
                     <section className={style.headerContainer__menuBar}>
                         <div className={style.headerContainer__menuBar__wrapper}>
                             <div className={style.headerContainer__menuBar__wrapper__items}>
-                                Usługi
+                                <span>Usługi</span>
                             </div>
                             <div className={style.headerContainer__menuBar__wrapper__items}>
-                                Aktualności
-                            </div> <div className={style.headerContainer__menuBar__wrapper__items}>
-                                Portfel walutowy
+                                <span>Aktualności</span>
+                            </div>
+                            <div className={style.headerContainer__menuBar__wrapper__items}>
+                                <span>Portfel walutowy</span>
                             </div>
                         </div>
                     </section>
