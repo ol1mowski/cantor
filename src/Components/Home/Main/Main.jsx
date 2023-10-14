@@ -5,11 +5,12 @@ import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import x from '../../../assets/x.svg';
 import { setShow } from '../../../store';
+import Menu from './Menu/Menu';
 
 const Main = () => {
     const main = useRef(null);
     const click = useSelector((state) => state.showMenu.click);
-    const closeMenu = useRef(null); // Ref dla elementu DOM, który jest później przypisany do x.svg
+    const closeMenu = useRef(null);
     const dispatch = useDispatch();
     
     useEffect(() => {
@@ -37,9 +38,7 @@ const Main = () => {
         <>
             {click ? <div className={style.menu}>
                 <img ref={closeMenu} className={style.menu__x} src={x} alt='close menu' />
-                <h1>
-                    menu
-                </h1>
+                <Menu />
             </div> : null}
             <main ref={main} className={style.mainContainer}>
                 <section className={style.mainContainer__contentContainer}>

@@ -1,0 +1,37 @@
+@import '../../../../sass/setting.sass';
+
+.menuLoginSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30%;
+    width: 100vw;
+    height: 20vh;
+    padding-top: 10%;
+    &__a {
+        font-family: $font-family-body;
+        font-size: 1rem;
+        color: $font-color-lithless;
+        text-decoration: none
+    };
+}
+
+.menuList {
+    margin: 0 auto;
+    padding: 2rem 0 0 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 80vh;
+    &__special {
+        color: #6432ff;
+        font-size: .9rem;
+    }
+}
+
+#btn {
+    padding: .7rem 2.7rem;
+    border-radius: .7rem;
+}
